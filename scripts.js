@@ -93,7 +93,7 @@ function DrawScreen(ObjToDraw) {
         )
 
 
-        if (EveryTriangleCounter = 3) {
+        /*if (EveryTriangleCounter = 3) {
             EveryTriangleCounter = 0;
             let indexminustwo = index - 2;
             const triangleelement = ObjToDraw[indexminustwo];
@@ -103,6 +103,7 @@ function DrawScreen(ObjToDraw) {
                 MiddleY - (triangleelement.PointY * triangleelement.PointZ * FOV)
             )
         }
+            */
         
         
         
