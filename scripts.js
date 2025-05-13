@@ -87,6 +87,10 @@ function DrawScreen(ObjToDraw) {
         //every triangle drawn counter
         let EveryTriangleCounter = 0
         EveryTriangleCounter++
+        ctx.lineTo(
+            (element.PointX * element.PointZ * FOV) + MiddleX,
+            MiddleY - (element.PointY * element.PointZ * FOV)
+        )
 
 
         if (EveryTriangleCounter = 3) {
@@ -101,10 +105,7 @@ function DrawScreen(ObjToDraw) {
         }
         
         
-        ctx.lineTo(
-            (element.PointX * element.PointZ * FOV) + MiddleX,
-            MiddleY - (element.PointY * element.PointZ * FOV)
-        )
+        
 
         //console.log((element.PointX * element.PointZ * FOV) + MiddleX);
         //console.log(MiddleY - (element.PointY * element.PointZ * FOV));
