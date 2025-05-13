@@ -81,7 +81,7 @@ let BoxObj = [
 
 function DrawScreen(ObjToDraw) {
     ctx.beginPath();
-    for (let index = 1; index < BoxObj.length; index++) {
+    for (let index = 1; index < ObjToDraw.length; index++) {
         const element = ObjToDraw[index];
         //console.log(index)
         //every triangle drawn counter
